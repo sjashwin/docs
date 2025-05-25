@@ -41,7 +41,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Plant"
+                    "$ref": "#/components/schemas/Pulse"
                   }
                 }
               }
@@ -60,13 +60,13 @@
         }
       },
       "post": {
-        "description": "Creates a new plant in the store",
+        "description": "Creates a new Pulse datapoint",
         "requestBody": {
-          "description": "Plant to add to the store",
+          "description": "Add a datapoint to Pulse",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlant"
+                "$ref": "#/components/schemas/NewPulse"
               }
             }
           },
