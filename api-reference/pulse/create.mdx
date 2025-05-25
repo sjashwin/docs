@@ -9,13 +9,33 @@ This endpoint allows users to create a new feedback entity. This entity will the
 
 ```bash bash
 # CURL request to train GRPO model with image support
-curl -X POST http://localhost:3000/api/pulse \
--H "x-api-key: supersecretapikey123" \
--F "dataset_name=my-dataset" \
--F "files=@example1.jpg" \
--F "labels=example1" \
--F "files=@example2.png" \
--F "labels=example2"
+curl -X POST http://your-api-endpoint.com/your-route \
+  -H "Content-Type: application/json" \
+  -d '{
+    "dataset_name": "dataset",
+    "data": [
+      {
+        "question": "what is the brand of phone?",
+        "answer": "nokia",
+        "image": "/home/jovyan/shares/SR004.nfs2/data/textvqa/train_images/0054c91397f2fe05.jpg",
+        "width": 512,
+        "height": 365,
+        "bboxs": [[168, 168, 193, 178]],
+        "dataset": "textvqa",
+        "split": "train"
+      },
+      {
+        "question": "what type of plane is this?",
+        "answer": "lape",
+        "image": "/home/jovyan/shares/SR004.nfs2/data/textvqa/train_images/005635e119b9f32f.jpg",
+        "width": 512,
+        "height": 333,
+        "bboxs": [[265, 154, 304, 167]],
+        "dataset": "textvqa",
+        "split": "train"
+      }
+    ]
+  }'
 ```
 
 
