@@ -1,0 +1,32 @@
+---
+title: "Create a new Feedback - Pulse"
+description: "Adding a new feedback to train a model based on reinforcement learning"
+---
+
+This endpoint allows users to create a new feedback entity. This entity will then be used to train the model based on reinforcement learning.
+
+<RequestExample>
+
+```bash filename
+# CURL request to train GRPO model with image support
+curl -X POST https://paradigm-shift.ai/api/feedback \
+  -H "Content-Type: application/json" \
+  -d '{
+    [
+      {
+        "prompt": "What is in this image?",
+        "completion": " A dog is playing in the park.",
+        "reward": 1.0,
+        "image_url": "https://example.com/sample-image.jpg"
+      },
+      {
+        "prompt": "What does this diagram show?",
+        "completion": " It illustrates the boot process of a computer.",
+        "reward": 0.9,
+        "image_url": "https://example.com/boot-diagram.png"
+      }
+    ]
+}'
+```
+
+</RequestExample>

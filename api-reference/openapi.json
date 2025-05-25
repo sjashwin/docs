@@ -19,9 +19,9 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/pulse": {
       "get": {
-        "description": "Returns all plants from the system that the user has access to",
+        "description": "Returns all pulse data points.",
         "parameters": [
           {
             "name": "limit",
@@ -35,7 +35,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Plant response",
+            "description": "Pulse response",
             "content": {
               "application/json": {
                 "schema": {

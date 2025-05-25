@@ -44,12 +44,11 @@
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Pulse",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/pulse/get",
+              "api-reference/pulse/create",
+              "api-reference/pulse/delete"
             ]
           }
         ]
@@ -59,17 +58,17 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://docs.paradigm-shift.ai/",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "href": "https://paradigm-shift.ai/",
           "icon": "slack"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://paradigm-shift.ai/blog",
           "icon": "newspaper"
         }
       ]
@@ -83,20 +82,20 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@paradigm-shift.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://paradigm-shift.ai/dashboard"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/ParadigmShiftAI",
+      "github": "https://github.com/ParadigmShift-AI-Corp",
+      "linkedin": "https://www.linkedin.com/company/paradigmshiftai"
     }
   }
 }
