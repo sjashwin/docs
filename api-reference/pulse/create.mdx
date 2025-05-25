@@ -1,13 +1,13 @@
 ---
 title: "Create Pulse"
-description: "Adding a new feedback to train a model based on reinforcement learning"
+description: "Add a new datapoint to train a vision model based on reinforcement learning"
 ---
 
 This endpoint allows users to create a new feedback entity. This entity will then be used to train the model based on reinforcement learning.
 
 <RequestExample>
 
-```bash filename
+```bash bash
 # CURL request to train GRPO model with image support
 curl -X POST https://paradigm-shift.ai/api/pulse \
 	-H "x-api-key: superSecretKey123" \
@@ -18,3 +18,7 @@ curl -X POST https://paradigm-shift.ai/api/pulse \
 ```
 
 </RequestExample>
+
+<ResponseField name="response" type="string">
+  Enter a description
+</ResponseField>
