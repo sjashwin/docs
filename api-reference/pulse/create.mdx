@@ -9,12 +9,13 @@ This endpoint allows users to create a new feedback entity. This entity will the
 
 ```bash bash
 # CURL request to train GRPO model with image support
-curl -X POST https://paradigm-shift.ai/api/pulse \
-	-H "x-api-key: superSecretKey123" \
-	-H "Content-Type: application/json" \
-	-F "datasetname=set1" \
-	-F "files=@example1.jpg" \
-	-F "files=@example2.png" 
+curl -X POST http://localhost:3000/api/pulse \
+-H "x-api-key: supersecretapikey123" \
+-F "dataset_name=my-dataset" \
+-F "files=@example1.jpg" \
+-F "labels=example1" \
+-F "files=@example2.png" \
+-F "labels=example2"
 ```
 
 
