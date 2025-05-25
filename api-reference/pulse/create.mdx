@@ -17,6 +17,27 @@ curl -X POST https://paradigm-shift.ai/api/pulse \
 	-F "files=@example2.png" 
 ```
 
+
+```typescript nodejs
+const formData = new FormData();
+  formData.append("datasetname", "set1");
+
+  // Add image files
+  const fileInput = document.querySelector("#fileInput");
+  for (const file of fileInput.files) {
+    formData.append("files", file);
+  }
+
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "x-api-key": apiKey,
+		"Content-Type": "application/json"
+    },
+    body: formData
+  });
+```
+
 </RequestExample>
 
 <ResponseField name="response" type="string">

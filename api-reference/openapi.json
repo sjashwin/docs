@@ -10,12 +10,12 @@
   },
   "servers": [
     {
-      "url": "http://sandbox.mintlify.com"
+      "url": "http://infra.paradigm-shift.ai"
     }
   ],
   "security": [
     {
-      "bearerAuth": []
+      "x-api-key": ""
     }
   ],
   "paths": {
